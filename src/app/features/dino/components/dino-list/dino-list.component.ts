@@ -1,4 +1,4 @@
-import {Component, computed, DestroyRef, inject, signal} from '@angular/core';
+import {Component, computed, DestroyRef, effect, inject, signal} from '@angular/core';
 import {DinoService} from "../../services/dino.service";
 import {takeUntilDestroyed, toSignal} from "@angular/core/rxjs-interop";
 import {AsyncPipe, NgForOf} from "@angular/common";
@@ -26,14 +26,19 @@ export class DinoListComponent {
   filteredDinos = computed( () => this.dinos$()?.filter(value => value.name.toUpperCase().includes(this.searchTerm().toUpperCase())));
 
   searchTerm = signal<string>('');
+  likes = signal<number>(0);
 
-
+  constructor() {
+    effect(() => {
+      this.countChanged();
+    })
+  }
 
   searchTermChanged(value: any) {
     this.searchTerm.set(value);
   }
 
-  countChanged($event: number) {
-    console.log('Count changed ',$event)
+  countChanged() {
+    console.log('Count changed ', this.likes())
   }
 }

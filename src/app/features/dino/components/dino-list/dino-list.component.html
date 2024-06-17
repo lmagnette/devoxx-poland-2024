@@ -13,7 +13,7 @@
   </div>
   <div class="content">
     @for(dino of filteredDinos(); track dino.id){
-      <app-dino-card [dino]="dino" (likeCountChanged)="countChanged($event)"></app-dino-card>
+      <app-dino-card [dino]="dino" [(likeCount)]="likes"></app-dino-card>
     } @empty {
       <p style="color:white">
         No dino found

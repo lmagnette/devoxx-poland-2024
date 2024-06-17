@@ -14,12 +14,16 @@
   <p>
     {{dino.description}}
   </p>
-  @if(dino.type === 'herbivorous'){
-    🥦🥦🥦
-  } @else if (dino.type === 'carnivorous'){
-    🥩🥩🥩
-  } @else {
-    🥦🥩🥦
+  @switch (dino.type){
+    @case ('herbivorous'){
+      🥦🥦🥦
+    }
+    @case ('carnivorous'){
+      🥩🥩🥩
+    }
+    @default {
+      🥦🥩🥦
+    }
   }
   <div [ngSwitch]="dino.type">
     <p *ngSwitchCase="'herbivorous'">

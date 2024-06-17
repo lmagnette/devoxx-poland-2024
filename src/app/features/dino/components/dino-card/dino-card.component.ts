@@ -24,8 +24,7 @@ import {MatSnackBar} from "@angular/material/snack-bar";
 })
 export class DinoCardComponent {
 
-  @Input({required:true})
-  dino!:Dino;
+  dino = input.required<Dino>();
 
   likeCount = signal<number>(0);
 

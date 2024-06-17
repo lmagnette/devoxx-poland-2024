@@ -32,7 +32,7 @@ export class DinoCardComponent {
 
   constructor() {
     effect(() =>{
-      this.snack.open(`${this.dino.name} has been liked ${this.likeCount()}`);
+      this.snack.open(`${this.dino().name} has been liked ${this.likeCount()}`);
     })
   }
 

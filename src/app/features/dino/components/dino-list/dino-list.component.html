@@ -12,7 +12,7 @@
     </div>
   </div>
   <div class="content">
-    @for(dino of dinos$ | async; track dino.id){
+    @for(dino of filteredDinos(); track dino.id){
       <app-dino-card [dino]="dino"></app-dino-card>
     } @empty {
       <p style="color:white">

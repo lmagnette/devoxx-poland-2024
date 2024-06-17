@@ -1,6 +1,6 @@
-import {Component, DestroyRef, inject} from '@angular/core';
+import {Component, computed, DestroyRef, inject, signal} from '@angular/core';
 import {DinoService} from "../../services/dino.service";
-import {takeUntilDestroyed} from "@angular/core/rxjs-interop";
+import {takeUntilDestroyed, toSignal} from "@angular/core/rxjs-interop";
 import {AsyncPipe, NgForOf} from "@angular/common";
 import {DinoCardComponent} from "../dino-card/dino-card.component";
 import {FormsModule} from "@angular/forms";
@@ -22,14 +22,14 @@ export class DinoListComponent {
   private destroyRef = inject(DestroyRef);
   private service = inject(DinoService);
 
-  dinos$ = this.service.list().pipe( takeUntilDestroyed(this.destroyRef));
+  dinos$ = toSignal(this.service.list().pipe( takeUntilDestroyed(this.destroyRef)));
+  filteredDinos = computed( () => this.dinos$()?.filter(value => value.name.toUpperCase().includes(this.searchTerm().toUpperCase())));
+
+  searchTerm = signal<string>('');
 
 
-  searchTerm() {
-    
-  }
 
-  searchTermChanged($event: any) {
-    
+  searchTermChanged(value: any) {
+    this.searchTerm.set(value);
   }
 }

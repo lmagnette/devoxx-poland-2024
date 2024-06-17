@@ -1,0 +1,10 @@
+{
+  "id": 1,
+  "name": "Tyrannosaurus Rex",
+  "type": "carnivorous",
+  "description": "The Tyrannosaurus Rex was one of the largest meat-eating dinosaurs that ever lived.",
+  "height": 12,
+  "length": 40,
+  "weight": 8000,
+  "imageUrl": "./assets/images/trex.png"
+}

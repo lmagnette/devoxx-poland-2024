@@ -1,0 +1,28 @@
+<div class="card">
+  <div class="title">
+    {{dino.name}}
+    <div>
+      <button mat-icon-button (click)="like()">
+        <mat-icon matBadge="0">favorite</mat-icon>
+      </button>
+      <a mat-icon-button [routerLink]="'/dinos/'+dino.id">
+        <mat-icon>info</mat-icon>
+      </a>
+    </div>
+  </div>
+  <img [ngSrc]="dino.imageUrl" [width]="400" [height]="400" alt="">
+  <p>
+    {{dino.description}}
+  </p>
+  <div [ngSwitch]="dino.description">
+    <p *ngSwitchCase="'herbivorous'">
+      🥦🥦🥦
+    </p>
+    <p *ngSwitchCase="'carnivorous'">
+      🥩🥩🥩
+    </p>
+    <p *ngSwitchCase="'omnivorous'">
+      🥦🥩🥦
+    </p>
+  </div>
+</div>

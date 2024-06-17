@@ -1,0 +1,30 @@
+<div class="content">
+<div class="card image">
+  <img [ngSrc]="dino.imageUrl" [width]="400" [height]="400">
+</div>
+<div class="card">
+  <p class="title">Nom:</p>
+  <p class="data">{{dino.name}}</p>
+  <p class="title">Description:</p>
+  <p class="data"> {{dino.description}}</p>
+  <p class="title">Type:</p>
+  <p class="data"> {{dino.type}}</p>
+  <p class="title">Height:</p>
+  <p class="data"> {{dino.height | ism }}m</p>
+  <p class="title">Length:</p>
+  <p class="data"> {{dino.length | ism }}m</p>
+  <p class="title">Weight:</p>
+  <p class="data"> {{dino.weight | ism }}g</p>
+</div>
+</div>
+<div class="facts">
+    @defer(on timer(3s)){
+      <app-dino-facts/>
+    } @placeholder (minimum 2s){
+      <app-dino-placeholder/>
+    } @loading (minimum 5s){
+      <app-dino-loading/>
+    } @error {
+      <p>An error occurred</p>
+    }
+</div>

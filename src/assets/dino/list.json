@@ -1,0 +1,102 @@
+[
+  {
+    "id": 1,
+    "name": "Tyrannosaurus Rex",
+    "type": "carnivorous",
+    "description": "The Tyrannosaurus Rex was one of the largest meat-eating dinosaurs that ever lived.",
+    "height": 12,
+    "length": 40,
+    "weight": 8000000,
+    "imageUrl": "./assets/images/trex.png"
+  },
+  {
+    "id": 2,
+    "name": "Triceratops",
+    "type": "herbivorous",
+    "description": "The Triceratops is known for its large bony frill and three horns on its face.",
+    "height": 10,
+    "length": 30,
+    "weight": 6000,
+    "imageUrl": "./assets/images/triceratops.png"
+  },
+  {
+    "id": 3,
+    "name": "Velociraptor",
+    "type": "carnivorous",
+    "description": "The Velociraptor was a swift, agile predator that hunted in packs.",
+    "height": 2,
+    "length": 6,
+    "weight": 15,
+    "imageUrl": "./assets/images/velo.png"
+  },
+  {
+    "id": 4,
+    "name": "Brachiosaurus",
+    "type": "herbivorous",
+    "description": "The Brachiosaurus was one of the tallest dinosaurs, known for its long neck.",
+    "height": 40,
+    "length": 85,
+    "weight": 56000,
+    "imageUrl": "./assets/images/brachiosaurus.png"
+  },
+  {
+    "id": 5,
+    "name": "Stegosaurus",
+    "type": "herbivorous",
+    "description": "The Stegosaurus had distinctive plates along its back and a spiked tail.",
+    "height": 9,
+    "length": 30,
+    "weight": 3100,
+    "imageUrl": "/assets/images/stego.png"
+  },
+  {
+    "id": 6,
+    "name": "Allosaurus",
+    "type": "carnivorous",
+    "description": "The Allosaurus was a large predator that lived during the Late Jurassic period.",
+    "height": 12,
+    "length": 39,
+    "weight": 2500,
+    "imageUrl": "https://example.com/allosaurus.png"
+  },
+  {
+    "id": 7,
+    "name": "Iguanodon",
+    "type": "herbivorous",
+    "description": "The Iguanodon was one of the first dinosaurs to be discovered and named.",
+    "height": 16,
+    "length": 33,
+    "weight": 5000,
+    "imageUrl": "https://example.com/iguanodon.png"
+  },
+  {
+    "id": 8,
+    "name": "Spinosaurus",
+    "type": "carnivorous",
+    "description": "The Spinosaurus is known for the sail-like structure on its back.",
+    "height": 18,
+    "length": 50,
+    "weight": 9300,
+    "imageUrl": "https://example.com/spinosaurus.png"
+  },
+  {
+    "id": 9,
+    "name": "Ankylosaurus",
+    "type": "herbivorous",
+    "description": "The Ankylosaurus was heavily armored and had a large club-like tail.",
+    "height": 5,
+    "length": 25,
+    "weight": 6000,
+    "imageUrl": "https://example.com/ankylosaurus.png"
+  },
+  {
+    "id": 10,
+    "name": "Compsognathus",
+    "type": "carnivorous",
+    "description": "The Compsognathus was a small, agile dinosaur that lived in the Late Jurassic period.",
+    "height": 1,
+    "length": 3,
+    "weight": 3,
+    "imageUrl": "https://example.com/compsognathus.png"
+  }
+]

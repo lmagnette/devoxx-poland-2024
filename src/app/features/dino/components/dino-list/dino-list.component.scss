@@ -1,0 +1,47 @@
+
+.view {
+  display: flex;
+  flex-direction: column;
+
+  .search{
+    display: flex;
+    justify-content: flex-end;
+    margin: 10px;
+    border: 1px solid rgb(0, 79, 79);
+    box-shadow: 3px 3px 3px rgb(0, 79, 79);
+    color: white;
+
+    .search-box{
+      padding: 10px;
+      box-shadow: 0 10px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19) !important;
+      border-radius: 5px;
+
+      input{
+        border-radius: 5px;
+        display: flex;
+        justify-content: space-around;
+        padding: 10px;
+        border: none;
+        font-size: 18px;
+      }
+    }
+  }
+
+  .card {
+    border: 1px solid rgb(0, 79, 79);
+    box-shadow: 3px 3px 3px rgb(0, 79, 79);
+    overflow: scroll;
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+
+  }
+
+  .content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 10px
+  }
+}

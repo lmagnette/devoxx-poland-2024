@@ -1,4 +1,4 @@
-import {Component, effect, inject, input, Input, signal} from '@angular/core';
+import {Component, effect, inject, input, Input, output, signal} from '@angular/core';
 import {Dino} from "../../models/dino";
 import {NgOptimizedImage, NgSwitch, NgSwitchCase} from "@angular/common";
 import {MatIconButton} from "@angular/material/button";
@@ -28,6 +28,8 @@ export class DinoCardComponent {
 
   likeCount = signal<number>(0);
 
+  likeCountChanged = output<number>();
+
   private snack = inject(MatSnackBar)
 
   constructor() {
@@ -39,5 +41,6 @@ export class DinoCardComponent {
 
   like() {
     this.likeCount.update( value => value+1);
+    this.likeCountChanged.emit(this.likeCount());
   }
 }

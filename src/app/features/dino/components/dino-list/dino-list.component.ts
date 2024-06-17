@@ -32,4 +32,8 @@ export class DinoListComponent {
   searchTermChanged(value: any) {
     this.searchTerm.set(value);
   }
+
+  countChanged($event: number) {
+    console.log('Count changed ',$event)
+  }
 }

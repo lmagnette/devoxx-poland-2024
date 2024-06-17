@@ -3,7 +3,7 @@
     {{dino.name}}
     <div>
       <button mat-icon-button (click)="like()">
-        <mat-icon matBadge="0">favorite</mat-icon>
+        <mat-icon [matBadge]="likeCount()">favorite</mat-icon>
       </button>
       <a mat-icon-button [routerLink]="'/dinos/'+dino.id">
         <mat-icon>info</mat-icon>

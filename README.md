@@ -1,6 +1,20 @@
 # DevoxxPoland
 
+This project is a demo created for a talk at Devoxx Poland 2024. 
+It is a simple Angular application used to demonstrate the new feature that came with angular 16, 17 and 18.
+You can find the slides of the talk [here](http://todo.com)
+
+The different commits illustrate the changes for the following subject:
+- initial project
+- switching to new control flow
+- adding defer view
+- signal
+- input/output/model
+- zoneless
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.2.
+
+
 
 ## Development server
 
@@ -27,11 +41,4 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
 
 
-## Demo
 
-- initial project
-- switching to new control flow
-- adding defer view
-- signal
-- input/output/model
-- zoneless

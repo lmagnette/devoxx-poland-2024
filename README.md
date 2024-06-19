@@ -2,7 +2,7 @@
 
 This project is a demo created for a talk at Devoxx Poland 2024. 
 It is a simple Angular application used to demonstrate the new feature that came with angular 16, 17 and 18.
-You can find the slides of the talk [here](http://todo.com)
+You can find the slides of the talk [here](https://speakerdeck.com/magnette/unleashing-the-power-of-angular-navigating-the-latest-releases-and-transformations)
 
 The different commits illustrate the changes for the following subject:
 - initial project
